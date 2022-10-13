@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+<h2>Books: {{title}}</h2>
+<p>Authors: {{author}}</p>
+<p>Rating: {{rating}}</p>
+<p>Review: {{review}}</p>
+<p>Genre: {{genre}}</p>
+<p>Year: {{year}}</p>
+<p>Date: {{date}}</p>
+<p>Favorite books: {{favorite}}</p>
+{% endblock %}
+<a href="/form">Register</a>
+</html>
+

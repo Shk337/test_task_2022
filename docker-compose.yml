@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+    test_task_api:
+        image: test_task_api
+        build: .
+        environment:
+            - TZ=Europe/Samara
+            - EMAIL_HOST_USER=USER
+            - EMAIL_HOST_PASSWORD=PASSWORD
+        ports:
+            - 8000:8000 #внешний_порт:внутренний порт
+        
+        command: python3 manage.py runserver 0.0.0.0:8000
